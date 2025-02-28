@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Futuristic Tourism</title>
+    <style>
+        body {
+            display: relative;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            color: #fafafa;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background-color: #1f1f1f;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: orange;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            background-color: cyan;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+        }
+
+        .destinations-container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .destination-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .destination-card {
+            background-color: #0000006d;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 70%;
+            border-radius: 10px;
+        }
+        .d-card{background-color: #0000006d;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s;
+
+        }
+        .d-card img{
+            width:100% ;
+            height: 70%;
+            border-radius: 10px;
+        }
+        .d-card:hover{
+            transform: scale(1.05);
+            background-color: #77deec;
+        }
+
+        .destination-card:hover {
+            transform: scale(1.05);
+            background-color: #e49f44;
+            
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .destination-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Ensures video stays in the background */
+        }
+
+        /* Optional: Add a semi-transparent overlay for better readability */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: -1;
+
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://i.imgur.com/hInC8TU.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <header>
+
+        
+        <div class="logo">
+            <img src="C:\Users\Administrator\Downloads\logo-palnadu.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="creater.html">Creator</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        
+    <section class="destinations-container">
+        <h2 style="color: black;">Explore Our Top Destinations</h2>
+        <div class="destination-grid">
+            <div  class="destination-card">
+               <a href="ds-1.html"><img src="https://i.imgur.com/AZrbCo1.jpeg" alt="Temples" height="80%"></a> 
+                <h3>Religious Tourism</h3>
+                <p style="font-size:30px ; font-weight: 700;">Kotappa Konda</p>
+            </div>
+            <div class="d-card">
+                <a href="ds-2.html"><img src="https://i.imgur.com/AMFRpzJ.jpeg" alt="New York" height="80px"></a>
+                <h3>Water Falls</h3>
+                <p style="font-size:30px ; font-weight: 700;">Ethipothala Falls</p>
+            </div>
+            <div class="destination-card">
+                <a href="ds-3.html"><img src="https://i.imgur.com/dDlLIQT.jpeg" alt="Tokyo"></a>
+                <h3>Engineering Tourism</h3>
+                <p style="font-size:30px ; font-weight: 700;">Nagarjuna Sagar Dam</p>
+            </div>
+            <div class="d-card">
+               <a href="ds-4.html"><img src="https://i.imgur.com/6Cm3WuF.png" alt="" height="250px margin-top: 30px;"></a> 
+                <h3 style="font: size 40px; ;">Fort</h3>
+                <p style="font-size:35px ; font-weight: 700; margin-top: 30px;" >Kondaveedu Fort</p>
+            </div>
+            <div class="destination-card">
+               <a href="ds-5.html"><img src="https://i.imgur.com/Lo6EXPU.jpeg" alt=""></a> 
+                <h3>Park</h3>
+                <p style="font-size:30px ; font-weight: 700; margin-bottom: 150px;">NTR Park</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Futuristic Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>

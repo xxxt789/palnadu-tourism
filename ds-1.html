@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Info</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.898);
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: orange;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .destination-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 2rem;
+        }
+        .gallery img {
+            width: 400px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(250, 215, 16, 0.891);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+            font-family: sans-serif;
+        }
+        .video-container {
+            margin-top: 2rem;
+        }
+        iframe {
+            width: 90%;
+            max-width: 1000px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(251, 236, 26);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: black;
+            background-color: cyan;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: orange;
+            box-shadow: 0 0 5px orange, 0 0 25px orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="creater.html">Creator</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="destination-title" id="destination-title">Kotappa Konda</h1>
+
+        <div class="gallery" id="image-gallery">
+            <img src="https://i.imgur.com/C8R6exl.jpeg" alt="">
+            <img src="https://i.imgur.com/Wg0B9Vo.jpeg" alt="">
+            <img src="https://i.imgur.com/e4CQNuh.jpeg" alt="">
+            <img src="https://i.imgur.com/EtzF65V.jpeg" alt="City Lights">
+        
+        </div>
+
+        <p class="description" id="destination-description">Kotappa Konda hamlet of Kondakavuru is situated about 13 Kms. South-west of Narasaraopet town. The Presiding Diety of this place is Trikoteswara Swamy situated on the hillock and is one of the noted piligrim centres attracting thousands of visitors on Sivarathri day. The State Government is taking steps to develop Kotappa Konda as a tourist and piligrim centre by creating more facilities and a ghat-road.</p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yr61rbRqrsA?start=763&amp;end=1254" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <a href="destination.html" class="back-button">Back to Destinations</a>
+    </div>
+</body>
+</html>

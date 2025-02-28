@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Info</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: orange;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .destination-title {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 200px;
+            margin-bottom: 2rem;
+        }
+        .gallery img {
+            width: 500px;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(105, 66, 24);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .video-container {
+            margin-top: 2rem;
+        }
+        iframe {
+            width: 90%;
+            max-width: 1000px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(121, 67, 23);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: black;
+            background-color: cyan;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: orange;
+            box-shadow: 0 0 5px orange, 0 0 25px orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="creater.html">Creator</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="destination-title" id="destination-title">Nagarjuna Sagar Dam</h1>
+
+        <div class="gallery" id="image-gallery">
+            <img src="https://i.imgur.com/LU099zO.jpeg" alt="Scenic View">
+            <img src="https://i.imgur.com/KK9bOqo.jpeg" alt="Beach Sunset">
+            <img src="https://i.imgur.com/2jng43J.jpeg" alt="Mountain Range">
+           
+        </div>
+
+        <h3 class="description" id="destination-description">World’s largest masonry dam protected with 26 gates measuring 124.663m in height , Nagarjunasagar Dam located in Nalgonda District is built across River Krishna.The dam has a storage capacity of nearly 11,472 million cubic meters with an irrigation capacity for 9.81 lac acres of land. The dam measure 150m tall and 16 kms in length while also being a major tourist attraction. In fact, it is among the first irrigation projects started by Indian Government as an element of Green Revolution.</h3>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cVeZIXgF5RY?si=iRwSvEWO8Ug_JDFn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <a href="destination.html" class="back-button">Back to Destinations</a>
+    </div>
+</body>
+</html>

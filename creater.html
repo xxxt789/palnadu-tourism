@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator - Futuristic Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: orange;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            position: relative;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 10px cyan;
+        }
+        .card-front {
+            background-color: #333;
+        }
+        .card-back {
+            background-color: #00bcd4;
+            transform: rotateY(180deg);
+            color: black;
+        }
+        .card img {
+            width: 150px;
+            height: 150px; ;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .logo {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .logo-left {
+            left: 10%;
+        }
+        .logo-right {
+            right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="creater.html">Creator</a></li>
+                <li><a href="about.html">about</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="https://i.imgur.com/mZHtAjp.jpeg" alt="Logo" class="logo logo-left">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.imgur.com/32Ar7dY.jpeg" alt="Creator">
+                    <h2>P.Akash Yadav</h2>
+                    <p>Web Developer</p>
+                    <p>CSE-AIML</p>
+                    <P>24A41A4237</P>
+                </div>
+                <div class="card-back">
+                    <h3>About the Creator</h3>
+                    <p>Passionate about web design and futuristic travel experiences. Loves coding and AI-driven innovations.</p>
+                </div>
+            </div>
+        </div>
+        <img src="https://i.imgur.com/mZHtAjp.jpeg" alt="Logo" class="logo logo-right">
+    </div>
+</body>
+</html>
