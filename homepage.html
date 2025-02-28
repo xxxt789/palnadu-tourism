@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Tourism</title>
+    <style>body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:black;
+        color: #ffffff;
+        
+    }
+    
+    header {
+       
+        /* background-color: #1f1f1f;
+        padding: 2rem;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0; */
+       
+        display: flex;
+        justify-content: space-between;
+
+    }
+    header>div img{
+        position: relative;
+        left: 20%;
+        width:70px;
+        height:70px;
+        border-radius:35px;
+        z-index: 10;
+
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+       position: relative;
+       top: 25%;
+    }
+    
+    nav ul li {
+        position: relative;
+        right: 30%;
+        margin: 0 1rem;
+        display: flex;
+        
+    }
+    
+    nav ul li a {
+        color:orange;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 25px;
+        padding: 5px;
+        font-weight:700;
+       
+    }
+    
+    nav ul li a:hover {
+        color: black;
+        background-color: cyan;
+        border-radius: 10px;
+        font-weight: 700;
+        box-shadow: 0 0 5px cyan,0 0 25px cyan, 0  0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+        padding:5px;
+    }
+    
+    .hero {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #bg-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        background: rgba(132, 132, 132, 0.5);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    
+    .hero p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .btn {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-weight: 900;
+    }
+    
+    .btn:hover {
+        background-color: #10e1fd;
+        color: #000;
+    }
+    
+    .content-section {
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+    
+    .destination-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .destination-card {
+        background-color: #1f1f1f;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: transform 0.3s, background-color 0.3s;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .destination-card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .destination-card:hover {
+        transform: scale(1.05);
+        background-color: #00bcd4;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form label, form input, form textarea, form button {
+        margin: 0.5rem 0;
+    }
+    
+    form input, form textarea {
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    form button {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #00bcd4;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    form button:hover {
+        background-color: #008c9e;
+    }
+    
+    footer {
+        background-color: #1f1f1f;
+        padding: 1rem;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://i.imgur.com/mZHtAjp.jpeg" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+               
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="creater.html">Creator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="https://i.imgur.com/IbXTyJj.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content">
+            <h1 style="color: rgba(88, 6, 88, 0.764);">Welcome to Palnadu </h1>
+            <p style="color: #15cae2b2;">Explore the beauty of palnadu with us</p>
+            <a href="destination.html" class="btn">Discover Now</a>
+        </div>
+    </section>
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>We offer the best travel experiences with cutting-edge technology and personalized services.</p>
+    </section>
+    <section id="destinations" class="content-section">
+        <h2> Top Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <a href="ds-5.html"><img src="https://i.imgur.com/Lo6EXPU.jpeg" alt=""></a>
+                <h3>Park</h3>
+                <p>NTR Park</p>
+            </div>
+            <div  class="destination-card">
+                <a href="ds-1.html"><img src="https://i.imgur.com/AZrbCo1.jpeg" alt="Temples" height="230px"></a> 
+                 <h3>Religious Tourism</h3>
+                 <p>Kotappa Konda</p>
+            </div>
+            <div class="destination-card">
+                <a href="ds-3.html"><img src="https://i.imgur.com/dDlLIQT.jpeg" alt="Tokyo"></a>
+                <h3>Engineering Tourism</h3>
+                <p>Nagarjuna Sagar Dam</p>
+            </div>
+        </div>
+    
+    <footer>
+        <p>&copy; 2025 Futuristic Tourism. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
